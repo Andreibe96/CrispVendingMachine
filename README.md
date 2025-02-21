@@ -55,7 +55,7 @@ npm run dev
 
 3. Locate the "vmtests.spec.ts" file within the "tests" directory.
 4. Change the localhost url to yours in the first "beforeEach" test.
-5. Enter the following command to run tests within a browser window:
+5. Enter the following command in a new terminal tab to run tests within a browser window:
 
 ```
 npx playwright test --ui
