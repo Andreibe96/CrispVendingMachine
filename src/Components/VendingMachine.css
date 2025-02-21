@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.VM {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: grey;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 900px;
+  height: 900px;
+}
+
+.vm-logo {
+  background-image: url("/crisp.png");
+  background-repeat: repeat; /* Makes the image repeat */
+  background-size: 20%; /* Keeps the original size of the image */
+  padding: 20px;
+  height: 120px;
+  width: 100%;
+}
+
+.pdk-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.display-screen {
+  background-color: #007672;
+  font-family: monospace;
+  color: white;
+  padding: 10px;
+  border: 2px solid black;
+  width: 300px;
+  height: 70px;
+  text-align: left;
+  font-size: 16px;
+  margin-left: 100px;
+}
+
+.product-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-selection {
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  padding: 80px;
+}
+
+.product-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+.product-price {
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.keypad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130px;
+  margin-left: -300px;
+  border: 2px solid black;
+  padding: 20px;
+  max-height: 210px;
+}
+
+.amount-deposited {
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.insert-change {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.change-button {
+  padding: 30px !important;
+  margin: 4px !important;
+}
+
+.cancel-button {
+  margin-top: 15px;
+}
+
+.item-collection {
+  width: 50%;
+  height: 80px;
+  background-color: black;
+  margin-top: auto;
+}
