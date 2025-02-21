@@ -2,7 +2,9 @@
 
 This project is a simple vending machine that allows a user to choose from various beverages, insert change or cancel a transaction.
 
-On initialization the machine will be loaded with:
+Automated testing done using Playwright.
+
+### On initialization the machine will be loaded with:
 
 - 5 of each coin (totaling $2)
 - 10x Cola ($0.25)
@@ -10,7 +12,7 @@ On initialization the machine will be loaded with:
 - 0x Lime Soda (out of stock - $0.25)
 - 2x Water ($0.45)
 
-The user can then select from the following options:
+### The user can then select from the following options:
 
 - Cancel transaction (return all deposited money)
 - Deposit nickle ($0.05)
@@ -39,3 +41,22 @@ npm run dev
 - "npm i" installs necessary dependencies
 
 7. You will see a local host link in your terminal, ctrl click on the link to open the application.
+
+## Instructions to run automated tests
+
+- Test can either be run standalone or with the application running
+- Ensure the "npm i" command has already been run
+- Steps 1 & 2 are optional, can be bypassed by running the application before running the test command.
+
+1. Locate the "playwrightconfig.ts" file within the main project directory.
+2. Scroll down to the "webServer:" property and change the "url:" to your local host.
+
+- app will have to be run first to determine your local host address
+
+3. Locate the "vmtests.spec.ts" file within the "tests" directory.
+4. Change the localhost url to yours in the first "beforeEach" test.
+5. Enter the following command to run tests within a browser window:
+
+```
+npx playwright test --ui
+```
