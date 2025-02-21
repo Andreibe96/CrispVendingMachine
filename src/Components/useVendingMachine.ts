@@ -16,7 +16,7 @@ function useVendingMachine() {
     const products: Product[] = [
       { id: 1, name: "Cola", price: 0.25, stock: 10 },
       { id: 2, name: "Diet Cola", price: 0.35, stock: 8 },
-      { id: 3, name: "Lime Sode", price: 0.25, stock: 0 },
+      { id: 3, name: "Lime Soda", price: 0.25, stock: 0 },
       { id: 4, name: "Water", price: 0.45, stock: 2 }, //criminal to make water the most expensive
     ];
 

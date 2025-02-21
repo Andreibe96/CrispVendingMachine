@@ -12,12 +12,13 @@ function Keypad({
 }): JSX.Element {
   return (
     <div className='keypad'>
-      <div className='amount-deposited'>
+      <div className='amount-deposited' data-testid='amount-deposited'>
         Amount Deposited: ${depositAmount.toFixed(2)}
       </div>
       <div className='insert-change'>Insert Change</div>
       <div className='change-buttons'>
         <Fab
+          data-testid='nickle-button'
           size='medium'
           className='change-button'
           onClick={() =>
@@ -27,6 +28,7 @@ function Keypad({
           $0.05
         </Fab>
         <Fab
+          data-testid='dime-button'
           size='medium'
           className='change-button'
           onClick={() =>
@@ -36,6 +38,7 @@ function Keypad({
           $0.10
         </Fab>
         <Fab
+          data-testid='quarter-button'
           size='medium'
           className='change-button'
           onClick={() =>
@@ -47,6 +50,7 @@ function Keypad({
       </div>
       <div className='cancel-button'>
         <Button
+          data-testid='cancel-button'
           variant='contained'
           color='error'
           disabled={depositAmount === 0}
