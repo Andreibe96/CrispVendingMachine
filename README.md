@@ -26,9 +26,10 @@ The user can then select from the following options:
 1. Inside of the code tab on this github page, click on the Green "<>Code" button and select "Download ZIP".
 2. Save the zip file to your directory of choice on your machimn.
 3. Unzip the project folder.
-4. Open the project folder in VS Code.
-5. Ensure that you have Node downloaded on your machine, if not click on the following link and download/install [node](https://nodejs.org/en/download)
-6. Open a terminal window (ensure you are in the main project directory "/crsip-vending-machine") and enter the following commands:
+4. Ensure that you have VS Code downloaded on your machine, if not click on the following link and download/install [vscode](https://code.visualstudio.com/download)
+5. Open the project folder in VS Code.
+6. Ensure that you have Node downloaded on your machine, if not click on the following link and download/install [node](https://nodejs.org/en/download)
+7. Open a terminal window (ensure you are in the main project directory) and enter the following commands:
 
 ```
 npm i
