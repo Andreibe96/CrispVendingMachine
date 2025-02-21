@@ -24,7 +24,7 @@ The user can then select from the following options:
 ## Instructions to run the application
 
 1. Inside of the code tab on this github page, click on the Green "<>Code" button and select "Download ZIP".
-2. Save the zip file to your directory of choice on your machimn.
+2. Save the zip file to your directory of choice on your machine.
 3. Unzip the project folder.
 4. Ensure that you have VS Code downloaded on your machine, if not click on the following link and download/install [vscode](https://code.visualstudio.com/download)
 5. Open the project folder in VS Code.
