@@ -52,8 +52,7 @@ function Keypad({
           disabled={depositAmount === 0}
           onClick={onCancel}
           sx={{
-            fontFamily: "Courier New, monospace",
-            fontSize: "16px",
+            fontSize: "14px",
           }}
         >
           Cancel

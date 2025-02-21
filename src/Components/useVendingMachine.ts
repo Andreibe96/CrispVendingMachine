@@ -1,3 +1,5 @@
+//main app logic
+
 import { useState, useEffect } from "react";
 import { Product } from "./types";
 
@@ -49,6 +51,7 @@ function useVendingMachine() {
     if (selectedProduct) {
       if (depositAmount >= selectedProduct.price) {
         if (selectedProduct.stock > 0) {
+          //changing selected products stock on purchase
           const updatedProducts = availableProducts.map((p) =>
             p.id === selectedProduct.id ? { ...p, stock: p.stock - 1 } : p
           );
@@ -64,6 +67,7 @@ function useVendingMachine() {
                 )} being returned to you.`
           );
 
+          //reseting deposit amount on purchase
           setDepositAmount(0);
         } else {
           //should never hit this else block, button disabled

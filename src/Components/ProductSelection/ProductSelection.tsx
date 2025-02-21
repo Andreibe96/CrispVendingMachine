@@ -12,7 +12,7 @@ function ProductSelection({
   return (
     <div className='product-selection'>
       <div className='product-buttons'>
-        {/* Dyanmically adds buttons as product selection increases */}
+        {/* dyanmically adds buttons as product selection increases */}
         {availableProducts.map((p) => (
           <div key={p.id}>
             <Button
@@ -35,6 +35,7 @@ function ProductSelection({
               {p.name}
             </Button>
             <div className='product-price'>
+              {/* dynamically changing price output based on product stock */}
               {p.stock === 0 ? `(Out of Stock)` : `$${p.price}`}
             </div>
           </div>

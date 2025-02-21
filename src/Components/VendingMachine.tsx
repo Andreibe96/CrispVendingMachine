@@ -24,9 +24,6 @@ function VendingMachine(): JSX.Element {
           onOptionClick={onOptionClick}
         />
         <Display displayText={displayText} />
-        {/* </div>
-
-      <div className='keypad-container'> */}
         <Keypad
           depositAmount={depositAmount}
           onCancel={onCancel}
