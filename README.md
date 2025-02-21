@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# Andrei Belittchenko Crisp Take Home Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple vending machine that allows a user to choose from various beverages, insert change or cancel a transaction.
 
-Currently, two official plugins are available:
+On initialization the machine will be loaded with:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 5 of each coin (totaling $2)
+- 10x Cola ($0.25)
+- 8x Diet Cola ($0.35)
+- 0x Lime Soda (out of stock - $0.25)
+- 2x Water ($0.45)
 
-## Expanding the ESLint configuration
+The user can then select from the following options:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Cancel transaction (return all deposited money)
+- Deposit nickle ($0.05)
+- Deposit dime ($0.10)
+- Deposit quarter ($0.25)
+- Select Cola
+- Select Diet Cola
+- Select Lime Soda
+- Select Water
 
-- Configure the top-level `parserOptions` property like this:
+## Instructions to run the application
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Inside of the code tab on this github page, click on the Green "<>Code" button and select "Download ZIP".
+2. Save the zip file to your directory of choice on your machimn.
+3. Unzip the project folder.
+4. Open the project folder in VS Code.
+5. Ensure that you have Node downloaded on your machine, if not click on the following link and download/install [node](https://nodejs.org/en/download)
+6. Open a terminal window (ensure you are in the main project directory "/crsip-vending-machine") and enter the following commands:
+
+```
+npm i
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- "npm i" installs necessary dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+7. You will see a local host link in your terminal, ctrl click on the link to open the application.
